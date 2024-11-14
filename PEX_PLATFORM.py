@@ -1,6 +1,3 @@
-    # a - get text from a form or wisper model
-    # b - stor it in db
-    # c - inhance report if requiered
 
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
