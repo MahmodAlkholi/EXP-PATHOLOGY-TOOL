@@ -90,12 +90,12 @@ with col2:
     audio_text_p_age = st.text_input("PATIENT AGE", "", key="audio_p_age")
     audio_text_p_PD = st.text_input("Referring Doctor", "", key="audio_p_PD")
     audio_text_p_date = st.date_input("DATE", key="audio_p_date")
-    audio_clinical = st.experimental_audio("RECORD YOUR VOICE CLINICAL DATA PLEASE", key="audio-clinical")
-    audio_micro_find = st.experimental_audio("RECORD YOUR Microscopic Examination DATA PLEASE", key="audio-micro_find")
-    input_audio_p_gross = st.file_uploader("UPLOAD GROSS IMAGES", type=["jpg", "jpeg", "png"], key="audio-gross")
-    input_audio_p_microscop = st.file_uploader("UPLOAD MICROSCOPIC IMAGES", type=["jpg", "jpeg", "png"], key="audio-microscopic")
-    audio_diagnosis = st.experimental_audio("RECORD YOUR VOICE DIAGNOSIS PLEASE", key="audio-diagnosis")
-    audio_recommend = st.experimental_audio("RECORD YOUR VOICE Recommendations PLEASE", key="audio-recommend")
+# Replace experimental_audio lines with file uploaders for each audio field.
+    audio_clinical = st.file_uploader("UPLOAD YOUR CLINICAL DATA AUDIO FILE", type=["wav", "mp3"], key="audio-clinical")
+    audio_micro_find = st.file_uploader("UPLOAD YOUR MICROSCOPIC EXAMINATION AUDIO FILE", type=["wav", "mp3"], key="audio-micro_find")
+    audio_diagnosis = st.file_uploader("UPLOAD YOUR DIAGNOSIS AUDIO FILE", type=["wav", "mp3"], key="audio-diagnosis")
+    audio_recommend = st.file_uploader("UPLOAD YOUR RECOMMENDATIONS AUDIO FILE", type=["wav", "mp3"], key="audio-recommend")
+
     save_audio_btn = st.button("SAVE DATA", key="audio-save")
 
 ########################################################
