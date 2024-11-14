@@ -1,0 +1,17 @@
+langchain
+langchain-openai
+Pillow
+PyMuPDF
+python-dotenv
+pytesseract
+requests
+langchain-text-splitters
+datetime
+langchain-community
+openai
+beautifulsoup4
+faiss-cpu
+langchain_chroma
+langchain-ollama
+langchain-groq
+anthropic
