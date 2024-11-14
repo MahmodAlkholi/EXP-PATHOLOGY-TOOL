@@ -14,13 +14,15 @@ import openai
 load_dotenv()
 
 # Retrieve API keys from environment variables
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+os.environ["OPENAI_API_KEY"] = str(os.getenv("OPENAI_API_KEY"))
+os.environ["LANGCHAIN_API_KEY"] = str(os.getenv("LANGCHAIN_API_KEY"))
 os.environ["LANGCHAIN_TRACING_V2"] = "True"
-os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
-os.environ["CLOADE_API_KEY"] = os.getenv("CLOADE_API_KEY")
-CLOADE_API_KEY = os.getenv("CLOADE_API_KEY")
-grok_api_key = os.getenv("GROQ_API_KEY")
+os.environ["LANGCHAIN_PROJECT"] = str(os.getenv("LANGCHAIN_PROJECT"))
+os.environ["CLOADE_API_KEY"] = str(os.getenv("CLOADE_API_KEY"))
+CLOADE_API_KEY = str(os.getenv("CLOADE_API_KEY"))
+grok_api_key = str(os.getenv("GROQ_API_KEY"))
+
+
 
 # Set Streamlit configuration
 st.set_page_config(
